@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Launch {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите числа");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
         int count = 180;
 
         if (a + b + c == count){
@@ -16,6 +16,20 @@ public class Launch {
         }
         else {
             System.out.println("Нет");
+        }
+
+
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите число:");
+        int x = sc.nextInt();
+        int z = sc.nextInt();
+
+        if (x % z == 0) {
+            System.out.println("Делится");
+        } else {
+            System.out.println("Не делится");
         }
     }
 }
